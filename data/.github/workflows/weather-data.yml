@@ -14,10 +14,13 @@ jobs:
             - name: Checkout repository
                 uses: actions/checkout@v4
 
-            - name: Set up Python
-                uses: actions/setup-python@v2
-                with:
-                    python-version: '3.x'
-
             - name: Run weather.sh
                 run: weather.sh
+
+            - name: Commit and push changes
+                run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add .
+        git commit -m "Automated changes by stocks.py script" || echo "No changes to commit"
+        git push origin main
