@@ -1,0 +1,22 @@
+name: Run Athenry Script
+
+on:
+    schedule:
+        - cron: '15 9 * * *' # triggering at 9:15am to avoid API overload
+    workflow_dispatch:
+
+jobs:
+    run-athenry-script:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+                uses: actions/checkout@v2
+
+            - name: Set up Python
+                uses: actions/setup-python@v2
+                with:
+                    python-version: '3.x'
+
+            - name: Run weather.sh
+                run: weather.sh
