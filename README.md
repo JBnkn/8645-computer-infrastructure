@@ -26,6 +26,10 @@ An outline of all tasks and how I approached them can be found in my Jupyter Not
 
 ### The Project
 
-The project entailed setting up a **GitHub Actions Workflow** that would apply the knowledge learned in the tasks to automate <code>weather.sh</code> and set it to run daily.
+The project entailed setting up a **GitHub Actions Workflow** that would apply the knowledge learned in the tasks to automate <code>weather.sh</code> and set it to run daily. This provided experience in using <code>cron</code> to schedule the automation, as well as giving me the chance to troubleshoot under the **actions** tab when it wasn't working as expected.
 
 The project component can be found within my <code>.github/workflows</code> folder. The automated outputs can be found under <code>data/weather</code>.
+
+### Resources
+
+I relied heavily on the module resource videos as presented by [Dr. Ian McLoughlin](https://github.com/ianmcloughlin). I am also heavily indebted to [ChatGPT](https://chatgpt.com/) which was an invaluable tool, primarily in troubleshooting my code when I couldn't quite make it work, or asking it to break down a piece of code and explain to me step-by-step what was happening at each point.
