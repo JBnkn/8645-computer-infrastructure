@@ -2,7 +2,8 @@ name: Run Athenry Script
 
 on:
     schedule:
-        - cron: '15 7 * * *' # triggering at 7:15am to avoid API overload
+        - cron: '15 7 * * *'
+        # triggering at 7:15am to avoid API overload
     workflow_dispatch:
 
 jobs:
