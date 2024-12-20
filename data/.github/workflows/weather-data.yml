@@ -2,8 +2,8 @@ name: Run Athenry Script
 
 on:
     schedule:
-        - cron: '15 7 * * *'
         # triggering at 7:15am to avoid API overload
+        - cron: '15 7 * * *'
     workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
 
         steps:
             - name: Checkout repository
-                uses: actions/checkout@v2
+                uses: actions/checkout@v4
 
             - name: Set up Python
                 uses: actions/setup-python@v2
