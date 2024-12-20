@@ -2,8 +2,8 @@ name: Run Athenry Script
 
 on:
     schedule:
-        # triggering at 7:35am to avoid API overload
-        - cron: '35 7 * * *'
+        # triggering at 7:55am to avoid API overload
+        - cron: '55 7 * * *'
     workflow_dispatch:
 
 jobs:
@@ -12,7 +12,7 @@ jobs:
 
         steps:
             - name: Checkout repository
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Run weather.sh
               run: ./weather.sh
