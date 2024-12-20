@@ -6,6 +6,9 @@ on:
         - cron: '55 7 * * *'
     workflow_dispatch:
 
+permissions:
+    contents: write
+
 jobs:
     run-athenry-script:
         runs-on: ubuntu-latest
