@@ -1,6 +1,8 @@
 # 8645-computer-infrastructure
 **by Joseph Benkanoun**
 
+<img src="https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/img/cloud.jpeg" alt="Cloud" width="600"/>
+
 Repository for the 2024 [Computer Infrastructure](https://www.gmit.ie/computer-infrastructure) module as part of the [Higher Diploma in Science in Data Analytics](https://www.gmit.ie/higher-diploma-in-science-in-computing-in-data-analytics) at ATU. 
 
 The purpose of this assessment is to develop the ability to:
